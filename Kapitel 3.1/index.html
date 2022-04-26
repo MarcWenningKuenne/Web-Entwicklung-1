@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meine erste HTML-Seite</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
     </head>
     <body>
         <!-- Übung 1 -->
@@ -96,6 +101,30 @@
                     <li>Südkorea</li>
                 </ol>
             </ul>
+        </div>
+
+        <!-- Übung 4 -->
+        <div>
+            <table>
+                <tr>
+                    <td rowspan="2">A</td>
+                    <td colspan="2">B</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td rowspan="2">E</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" colspan="2">G</td>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>J</td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>
