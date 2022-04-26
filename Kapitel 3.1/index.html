@@ -126,5 +126,67 @@
                 </tr>
             </table>
         </div>
+
+        <!-- Übung 5 -->
+        <div>
+            <h2>Ihre Produktanfragen</h2>
+            <form action="https://postman-echo.com/post" method="post">
+                <fieldset>
+                    <legend>Produkt</legend>
+                    <p>
+                        <input type="radio" id="product_super_booster" name="product" value="Super Booster" checked="checked">
+                        <label>Super Booster</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="product_mega_blaster" name="product" value="Mega Blaster">
+                        <label>Mega Blaster</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="product_hyper_box" name="product" value="Hyper Box">
+                        <label>Hyper Box</label>
+                    </p>
+                    <p>
+                        <label for="amount">Anzahl</label>
+                        <input type="text" id="amount" name="Anzahl" value="1"/>
+                    </p>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Ihre Daten</legend>
+                    <p>
+                        <label>Anrede</label>
+                        <select name="anrede">
+                            <option value="Herr">Herr</option>
+                            <option value="Frau">Frau</option>
+                            <option value="Familie">Familie</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="first_name">Vorname</label>
+                        <input type="text" id="first_name" name="firstname" required="required"/>
+                    </p>
+                    <p>
+                        <label for="last_name">Nachname</label>
+                        <input type="text" id="last_name" name="lastname" required="required"/>
+                    </p>
+                    <p>
+                        <label for="phone_number">Telefonnummer</label>
+                        <input type="text" id="phnone_number" name="phonenumber"/>
+                    </p>
+                    <p>
+                        <label for="mail">Mail</label>
+                        <input type="mail" id="mail" name="mail" required="required"/>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Anmerkungen</legend>
+                    <textarea id="info" name="Anmerkung"></textarea>
+                </fieldset>
+                <fieldset>
+                    <input type="submit"/>
+                    <input type="reset"/>
+                </fieldset>
+            </form>
+        </div>
     </body>
 </html>
